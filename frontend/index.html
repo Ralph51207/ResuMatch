@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuMatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ResuMatch</h1>
+        <p class="subtitle">Paste your resume below to find your top matching jobs</p>
+
+        <textarea id="resume-input" placeholder="Paste your resume text here..."></textarea>
+
+        <button id="match-btn" onclick="matchResume()">Find Matches</button>
+
+        <div id="results" class="results hidden">
+            <h2>Top Matching Jobs</h2>
+            <div id="matches-list"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
